@@ -1,0 +1,12 @@
+{
+  "name": "@forktheghost/openclaw-ipad",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "OpenClaw plugin — iPad cursor control via ESP32 BLE HID bridge",
+  "openclaw": {
+    "extensions": ["./index.js"],
+    "compat": { "pluginApi": ">=2026.3.24-beta.2", "minGatewayVersion": "2026.3.24-beta.2" }
+  },
+  "scripts": { "test": "node --test test/*.js" },
+  "engines": { "node": ">=22" }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "ipad-control",
+  "name": "iPad Control",
+  "description": "Drive an iPad cursor via ESP32 BLE HID bridge — move, directional swipe, test pattern",
+  "version": "1.0.0",
+  "configSchema": {
+    "type": "object",
+    "required": ["bridgeUser", "bridgeHost", "bridgeCmdPath"],
+    "additionalProperties": false,
+    "properties": {
+      "bridgeUser": {
+        "type": "string",
+        "description": "SSH username on the bridge host"
+      },
+      "bridgeHost": {
+        "type": "string",
+        "description": "Bridge host IP address or hostname (Tailscale or LAN)"
+      },
+      "bridgeCmdPath": {
+        "type": "string",
+        "description": "Absolute path to ipad-bridge-cli.py on the bridge host"
+      }
+    }
+  }
+}
