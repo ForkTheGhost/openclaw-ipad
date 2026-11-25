@@ -10,6 +10,18 @@ Drive an iPad cursor via an ESP32 BLE HID bridge. JavaScript ESM plugin for Open
 | `ipad_move` | Move cursor by dx/dy delta |
 | `ipad_square` | Trace a square pattern — verifies bridge is live before issuing commands |
 
+## Screen capture and vision
+
+This checkout packages v1.0.0 and registers the three cursor tools above. Screen
+capture and image descriptions are unavailable in this package.
+
+The capture issue records a test where the OpenClaw gateway dropped image tool
+results before they reached the model. It also describes a v1.1.0 workaround
+that calls a vision API from the capture handler. Native capture depends on
+verifying that the target gateway passes tool images through to a vision-capable
+model.
+[#3](https://github.com/ForkTheGhost/openclaw-ipad/issues/3)
+
 ## Architecture
 
 ```
